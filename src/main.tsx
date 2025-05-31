@@ -8,50 +8,46 @@ createRoot(document.getElementById("root")!).render(
     <div className="satoshi">
       <Nav />
       {/* Hero */}
-      <section className="flex w-full h-[calc(100vh-106px)] justify-between px-[175px] items-center">
-        <div className="w-[498px]">
-          <h1 className="font-extrabold text-7xl text-gray-900">
+      <section className="flex w-full min-h-[calc(100vh-106px)] justify-between px-6 lg:px-[175px] items-center flex-col lg:flex-row py-10 lg:py-0">
+        <div className="max-w-xl w-full mb-10 lg:mb-0">
+          <h1 className="font-extrabold text-5xl sm:text-6xl lg:text-7xl text-gray-900">
             <div>Tyson</div>
             <div className="mt-2">Yoshikawa</div>
           </h1>
-          <p className="text-xl pt-[40px] text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-            faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
-            pretium tellus duis convallis tempus leo eu aenean sed diam urna
-            tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas
-            iaculis massa nisl malesuada lacinia integer nunc posuere ut
-            hendrerit semper vel class aptent taciti sociosqu ad litora torquent
-            per.
+          <p className="text-base sm:text-lg pt-6 sm:pt-10 text-gray-700">
+            Hi! My name is Tyson, and I am an incoming Sophomore at Cornell
+            University looking to major in Computer Science and minor in
+            Education. I'm passionate about edtech and anything related to using
+            software to drive social change. Outside of this however, I enjoy
+            cooking, hitting the gym, and indoor bouldering!
           </p>
         </div>
-        <div className="w-[420px]">
-          <img
-            src="/headshot.png"
-            alt="Headshot"
-            className="w-[420px] h-auto"
-          />
-          <div className="flex justify-between mt-[10px]">
+
+        <div className="w-full max-w-sm sm:max-w-md">
+          <img src="/headshot.png" alt="Headshot" className="w-full h-auto" />
+          <div className="flex flex-col sm:flex-row justify-between mt-3 sm:mt-[10px] text-center sm:text-left">
             <div className="text-lg text-gray-600">
               tmy25@cornell.edu
               <br />
               <span className="underline">Resume</span>
             </div>
-            <span className="flex">
+            <span className="flex justify-center sm:justify-end mt-3 sm:mt-0">
               <a
                 href="https://www.linkedin.com/in/tysonyoshikawa/"
                 target="_blank"
+                className="mr-3"
               >
                 <img
                   src="/linkedin.png"
                   alt="LinkedIn"
-                  className="w-[44px] h-[44px] mr-[10px]"
+                  className="w-[36px] sm:w-[44px] h-auto"
                 />
               </a>
               <a href="https://github.com/tysonyoshikawa06" target="_blank">
                 <img
                   src="github.png"
                   alt="GitHub"
-                  className="w-[44px] h-[44px]"
+                  className="w-[36px] sm:w-[44px] h-auto"
                 />
               </a>
             </span>
@@ -60,109 +56,98 @@ createRoot(document.getElementById("root")!).render(
       </section>
 
       {/* Projects */}
-      <section className="relative w-4/5 mx-auto" id="projects">
+      <section
+        className="relative w-11/12 max-w-6xl mx-auto px-4 sm:px-6"
+        id="projects"
+      >
         <div className="h-[2px] bg-gray-200"></div>
-        <h2 className="font-bold text-3xl mt-4 text-gray-800">Projects</h2>
+        <h2 className="font-bold text-2xl sm:text-3xl mt-4 text-gray-800">
+          Projects
+        </h2>
 
-        {/* Vertical line */}
-        <div className="absolute right-0 top-[300px] bottom-[300px] w-[1px] bg-gray-300"></div>
+        <div className="absolute right-0 top-[300px] bottom-[300px] w-[1px] bg-gray-300 hidden lg:block"></div>
 
-        <div className="text-center py-30">
-          <div className="flex justify-center flex-col items-center relative ">
-            <img
-              src="platstem.png"
-              alt="platstem.org"
-              className="w-[680px] h-auto"
-            />
-
-            {/* Horizontal line */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px]">
-              <div className="w-full h-[1px] bg-gray-300"></div>
-              <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
-                July 2024
-              </span>
-            </div>
-
-            <a href="https://platstem.org/" target="_blank">
-              <h3 className="font-semibold text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
-                platstem.org
-              </h3>
-            </a>
-            <p className="w-[65%] pt-5 text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-              faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
-              pretium tellus duis convallis tempus leo eu aenean sed diam urna
-              tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas
-              iaculis massa nisl malesuada lacinia integer nunc posuere ut
-              hendrerit semper vel class aptent taciti sociosqu ad litora
-              torquent per.
-            </p>
-          </div>
-
-          <div className="flex justify-center flex-col items-center pt-32 relative">
-            <img
-              src="ocgroups.png"
-              alt="OffCampusGroups"
-              className="w-[680px] h-auto"
-            />
-
-            {/* Horizontal line */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px]">
-              <div className="w-full h-[1px] bg-gray-300"></div>
-              <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
-                Sep 2024
-              </span>
-            </div>
-
-            <a href="https://github.com/wsonja/offCampusGroups" target="_blank">
-              <h3 className="font-semibold text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
-                OffCampusGroups
-              </h3>
-            </a>
-            <p className="w-[65%] pt-5 text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-              faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
-              pretium tellus duis convallis tempus leo eu aenean sed diam urna
-              tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas
-              iaculis massa nisl malesuada lacinia integer nunc posuere ut
-              hendrerit semper vel class aptent taciti sociosqu ad litora
-              torquent per.
-            </p>
-          </div>
-
-          <div className="flex justify-center flex-col items-center pt-32 relative">
-            <img
-              src="asphalt.png"
-              alt="Asphalt Case Study"
-              className="w-[680px] h-auto"
-            />
-
-            {/* Horizontal line */}
-            <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px]">
-              <div className="w-full h-[1px] bg-gray-300"></div>
-              <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
-                Feb 2025
-              </span>
-            </div>
-
-            <a
-              href="https://github.com/tysonyoshikawa06/asphalt-nme-sp25-tyson"
-              target="_blank"
+        <div className="text-center py-15 sm:py-15">
+          {[
+            {
+              src: "platstem.png",
+              alt: "platstem.org",
+              date: "July 2024",
+              title: "platstem.org",
+              link: "https://platstem.org/",
+              stack: "HTML, CSS, Bootstrap, JavaScript",
+              desc: `Platstem.org was my first attempt at building an deploying software onto the internet. Made with simple technologies, platstem.org is a website with over one hundred different science resources for high school students to explore, giving students a way to explore complex scientific topics not traditionally taught at the high school level.`,
+            },
+            {
+              src: "ocgroups.png",
+              alt: "OffCampusGroups",
+              date: "Sep 2024",
+              title: "OffCampusGroups",
+              link: "https://off-campus-groups.vercel.app/",
+              stack: "React, TypeScript, Node.js, TailwindCSS, Firebase, OAuth",
+              desc: `Built as a class project at Cornell, OffCampusGroups is an app designed to help students find groups to go with to large off-campus events (concerts, networking events, etc.).`,
+            },
+            {
+              src: "asphalt.png",
+              alt: "Asphalt Case Study",
+              date: "Feb 2025",
+              title: "Asphalt Case Study",
+              link: "https://github.com/tysonyoshikawa06/asphalt-nme-sp25-tyson",
+              stack: "React, TypeScript, Node.js, TailwindCSS",
+              desc: (
+                <>
+                  Asphalt is a tool developed by Cornell's{" "}
+                  <u>
+                    <a
+                      href="https://www.joingreenclub.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GreenClub
+                    </a>
+                  </u>{" "}
+                  to help optimize routes for food waste transport to minimize
+                  emissions. As a part of my onboarding process for GreenClub, I
+                  was tasked with helping to design and implement 4 new pages
+                  for their website to provide stakeholders with a more
+                  intuitive user experience.
+                </>
+              ),
+            },
+          ].map((proj, idx) => (
+            <div
+              className="flex justify-center flex-col items-center pt-20 sm:pt-32 relative"
+              key={idx}
             >
-              <h3 className="font-semibold text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
-                Asphalt Case Study
-              </h3>
-            </a>
-            <p className="w-[65%] pt-5 text-gray-700">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
-              faucibus ex sapien vitae pellentesque sem placerat in id cursus mi
-              pretium tellus duis convallis tempus leo eu aenean sed diam urna
-              tempor pulvinar vivamus fringilla lacus nec metus bibendum egestas
-              iaculis massa nisl malesuada lacinia integer nunc posuere ut
-              hendrerit semper vel class aptent taciti sociosqu ad litora
-              torquent per.
-            </p>
-          </div>
+              <span className="text-sm text-gray-600 pb-1 block lg:hidden">
+                {proj.date}
+              </span>
+              <img
+                src={proj.src}
+                alt={proj.alt}
+                className="w-full max-w-2xl h-auto"
+              />
+
+              <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px] hidden lg:block">
+                <div className="w-full h-[1px] bg-gray-300"></div>
+                <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
+                  {proj.date}
+                </span>
+              </div>
+
+              <a href={proj.link} target="_blank">
+                <h3 className="font-semibold text-xl sm:text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
+                  {proj.title}
+                </h3>
+              </a>
+              <p className="pt-1 text-gray-700">
+                <em>{proj.stack}</em>
+              </p>
+              <p className="w-full max-w-2xl pt-3 text-gray-700 px-4 sm:px-0">
+                {proj.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </div>
