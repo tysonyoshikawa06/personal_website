@@ -10,32 +10,48 @@ createRoot(document.getElementById("root")!).render(
       {/* Hero */}
       <section className="flex w-full min-h-[calc(100vh-106px)] justify-between px-6 lg:px-[175px] items-center flex-col lg:flex-row py-10 lg:py-0">
         <div className="max-w-xl w-full mb-10 lg:mb-0">
-          <h1 className="font-extrabold text-5xl sm:text-6xl lg:text-7xl text-gray-900">
-            <div>Tyson</div>
-            <div className="mt-2">Yoshikawa</div>
-          </h1>
+          <div>
+            <h1 className="font-extrabold text-5xl sm:text-6xl lg:text-7xl text-gray-900 leading-none flex items-end justify-between">
+              <div>
+                Tyson
+                <div className="mt-2">Yoshikawa</div>
+              </div>
+            </h1>
+          </div>
+
           <p className="text-base sm:text-lg pt-6 sm:pt-10 text-gray-700">
-            Hi! My name is Tyson, and I am an incoming Sophomore at Cornell
-            University looking to major in Computer Science and minor in
-            Education. I'm passionate about edtech and anything related to using
-            software to drive social change. Outside of this however, I enjoy
-            cooking, hitting the gym, and indoor bouldering!
+            Hi! My name is Tyson, and I am a Sophomore at stuyding Computer
+            Science and Education at <b>Cornell University</b>. I'm passionate
+            about education technology and anything related to using software to
+            drive social change. Outside of academics, I enjoy cooking, hitting
+            the gym, and listening to music!
           </p>
         </div>
 
         <div className="w-full max-w-sm sm:max-w-md">
-          <img src="/headshot.png" alt="Headshot" className="w-full h-auto" />
+          <img
+            src="/headshot.png"
+            alt="Headshot"
+            className="w-full h-auto shadow-lg"
+          />
           <div className="flex flex-col sm:flex-row justify-between mt-3 sm:mt-[10px] text-center sm:text-left">
             <div className="text-lg text-gray-600">
               tmy25@cornell.edu
               <br />
-              <span className="underline">Resume</span>
+              <span className="underline hover:text-gray-500">
+                <a
+                  href="https://docs.google.com/document/d/1Y637g9_FWVhkjgH9nHLHI0MiHJEbPNkm/edit"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </span>
             </div>
             <span className="flex justify-center sm:justify-end mt-3 sm:mt-0">
               <a
                 href="https://www.linkedin.com/in/tysonyoshikawa/"
                 target="_blank"
-                className="mr-3"
+                className="mr-3  hover:opacity-80"
               >
                 <img
                   src="/linkedin.png"
@@ -43,7 +59,11 @@ createRoot(document.getElementById("root")!).render(
                   className="w-[36px] sm:w-[44px] h-auto"
                 />
               </a>
-              <a href="https://github.com/tysonyoshikawa06" target="_blank">
+              <a
+                href="https://github.com/tysonyoshikawa06"
+                target="_blank"
+                className=" hover:opacity-80"
+              >
                 <img
                   src="github.png"
                   alt="GitHub"
@@ -56,10 +76,7 @@ createRoot(document.getElementById("root")!).render(
       </section>
 
       {/* Projects */}
-      <section
-        className="relative w-11/12 max-w-6xl mx-auto px-4 sm:px-6"
-        id="projects"
-      >
+      <section className="relative w-11/12 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="h-[2px] bg-gray-200"></div>
         <h2 className="font-bold text-2xl sm:text-3xl mt-4 text-gray-800">
           Projects
@@ -84,7 +101,8 @@ createRoot(document.getElementById("root")!).render(
               date: "Sep 2024",
               title: "OffCampusGroups",
               link: "https://off-campus-groups.vercel.app/",
-              stack: "React, TypeScript, Node.js, TailwindCSS, Firebase, OAuth",
+              stack:
+                "React, TypeScript, Node.js, Tailwind CSS, Firebase, OAuth",
               desc: `Built as a class project at Cornell, OffCampusGroups is an app designed to help students find groups to go with to large off-campus events (concerts, networking events, etc.).`,
             },
             {
@@ -93,11 +111,11 @@ createRoot(document.getElementById("root")!).render(
               date: "Feb 2025",
               title: "Asphalt Case Study",
               link: "https://github.com/tysonyoshikawa06/asphalt-nme-sp25-tyson",
-              stack: "React, TypeScript, Node.js, TailwindCSS",
+              stack: "React, Next.js, TypeScript, Node.js, Tailwind CSS",
               desc: (
                 <>
                   Asphalt is a tool developed by Cornell's{" "}
-                  <u>
+                  <u className="hover:text-gray-500">
                     <a
                       href="https://www.joingreenclub.com/"
                       target="_blank"
@@ -114,6 +132,38 @@ createRoot(document.getElementById("root")!).render(
                 </>
               ),
             },
+            {
+              src: "valence.png",
+              alt: "Valence",
+              date: "May 2025",
+              title: (
+                <>
+                  <div id="recent-project">Valence</div>
+                </>
+              ),
+              link: "https://github.com/tysonyoshikawa06/valence",
+              stack:
+                "React, Next.js, TypeScript, Node.js, Tailwind CSS, Cytoscape.js, Express, Supabase, OAuth, OpenAI API",
+              desc: (
+                <>
+                  I'm currently building{" "}
+                  <u className="hover:text-gray-500">
+                    <a
+                      href="https://docs.google.com/presentation/d/19QcAWFcrui7778SaAjXAdiUdlfUM_zuHWGm2gOXasW0/edit?slide=id.g2747bfd1ede_0_44#slide=id.g2747bfd1ede_0_44"
+                      target="_blank"
+                    >
+                      Valence
+                    </a>
+                  </u>
+                  , a web application that leverages AI to help the 52% of
+                  struggling high school students to better understand
+                  intra-subject relations in science. Users are encouraged to
+                  talk to an AI tutor to unlock new topics and progress through
+                  the interactive graph by asking deep questions and
+                  demonstrating systems thinking.
+                </>
+              ),
+            },
           ].map((proj, idx) => (
             <div
               className="flex justify-center flex-col items-center pt-20 sm:pt-32 relative"
@@ -125,7 +175,7 @@ createRoot(document.getElementById("root")!).render(
               <img
                 src={proj.src}
                 alt={proj.alt}
-                className="w-full max-w-2xl h-auto"
+                className="w-full max-w-2xl h-auto "
               />
 
               <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px] hidden lg:block">

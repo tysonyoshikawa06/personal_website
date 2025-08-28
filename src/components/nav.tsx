@@ -1,5 +1,5 @@
 const Nav = () => {
-  const date = "May 31, 2025";
+  const date = "August 28, 2025";
   return (
     <div
       className="
@@ -15,8 +15,8 @@ const Nav = () => {
       <div className="mb-2 sm:mb-0">Last Updated: {date}</div>
 
       <div>
-        <a href="#projects" className="hover:text-gray-500">
-          Projects
+        <a href="#recent-project" className="hover:text-gray-500">
+          Recent Project
         </a>
       </div>
     </div>
