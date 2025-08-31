@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
           </div>
 
           <p className="text-base sm:text-lg pt-6 sm:pt-10 text-gray-700">
-            Hi! My name is Tyson, and I am a Sophomore at stuyding Computer
+            Hi! My name is Tyson, and I am a Sophomore at studying Computer
             Science and Education at <b>Cornell University</b>. I'm passionate
             about education technology and anything related to using software to
             drive social change. Outside of academics, I enjoy cooking, hitting
