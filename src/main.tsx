@@ -8,31 +8,29 @@ createRoot(document.getElementById("root")!).render(
     <div className="satoshi">
       <Nav />
       {/* Hero */}
-      <section className="flex w-full min-h-[calc(100vh-106px)] justify-between px-6 lg:px-[175px] items-center flex-col lg:flex-row py-10 lg:py-0">
-        <div className="max-w-xl w-full mb-10 lg:mb-0">
+      <section className="flex w-full min-h-[calc(100vh-106px)] justify-between px-6 md:px-12 lg:px-[175px] items-center flex-col md:flex-row py-10 lg:py-0">
+        <div className="max-w-xl w-full mb-10 md:mb-0 md:pr-10">
           <div>
-            <h1 className="font-extrabold text-5xl sm:text-6xl lg:text-7xl text-gray-900 leading-none flex items-end justify-between">
-              <div>
-                Tyson
-                <div className="mt-2">Yoshikawa</div>
-              </div>
+            <h1 className="font-extrabold text-5xl sm:text-6xl lg:text-7xl text-gray-900 leading-none">
+              Tyson
+              <div className="mt-2">Yoshikawa</div>
             </h1>
           </div>
 
           <p className="text-base sm:text-lg pt-6 sm:pt-10 text-gray-700">
             Hi! My name is Tyson, and I am a Sophomore studying Computer Science
             and Education at <b>Cornell University</b>. I'm passionate about
-            education technology and anything related to using software to drive
-            social change. Outside of academics, I enjoy cooking, hitting the
-            gym, and listening to music!
+            educational technology and anything related to using software to
+            drive social change. Outside of academics, I enjoy cooking, hitting
+            the gym, and listening to music!
           </p>
         </div>
 
-        <div className="w-full max-w-sm sm:max-w-md">
+        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md flex-shrink-0">
           <img
             src="/headshot.png"
             alt="Headshot"
-            className="w-full h-auto shadow-lg"
+            className="w-full h-auto shadow-lg mx-auto md:mx-0"
           />
           <div className="flex flex-col sm:flex-row justify-between mt-3 sm:mt-[10px] text-center sm:text-left">
             <div className="text-lg text-gray-600">
@@ -51,7 +49,7 @@ createRoot(document.getElementById("root")!).render(
               <a
                 href="https://www.linkedin.com/in/tysonyoshikawa/"
                 target="_blank"
-                className="mr-3  hover:opacity-80"
+                className="mr-3 hover:opacity-80"
               >
                 <img
                   src="/linkedin.png"
@@ -62,7 +60,7 @@ createRoot(document.getElementById("root")!).render(
               <a
                 href="https://github.com/tysonyoshikawa06"
                 target="_blank"
-                className=" hover:opacity-80"
+                className="hover:opacity-80"
               >
                 <img
                   src="github.png"
@@ -77,14 +75,14 @@ createRoot(document.getElementById("root")!).render(
 
       {/* Projects */}
       <section className="relative w-11/12 max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="h-[2px] bg-gray-200"></div>
+        <div className="h-[2px] bg-gray-300 timeline"></div>
         <h2 className="font-bold text-2xl sm:text-3xl mt-4 text-gray-800">
           Projects
         </h2>
 
-        <div className="absolute right-0 top-[300px] bottom-[300px] w-[1px] bg-gray-300 hidden lg:block"></div>
+        <div className="absolute right-0 top-[300px] bottom-[300px] w-[1px] bg-gray-300 hidden lg:block timeline"></div>
 
-        <div className="text-center py-15 sm:py-15">
+        <div className="text-center py-15 sm:py-15" id="recent-project">
           {[
             {
               src: "platstem.png",
@@ -138,7 +136,7 @@ createRoot(document.getElementById("root")!).render(
               date: "May 2025",
               title: (
                 <>
-                  <div id="recent-project">Valence</div>
+                  <div>Valence</div>
                 </>
               ),
               link: "https://github.com/tysonyoshikawa06/valence",
@@ -164,40 +162,42 @@ createRoot(document.getElementById("root")!).render(
                 </>
               ),
             },
-          ].map((proj, idx) => (
-            <div
-              className="flex justify-center flex-col items-center pt-20 sm:pt-32 relative"
-              key={idx}
-            >
-              <span className="text-sm text-gray-600 pb-1 block lg:hidden">
-                {proj.date}
-              </span>
-              <img
-                src={proj.src}
-                alt={proj.alt}
-                className="w-full max-w-2xl h-auto "
-              />
-
-              <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px] hidden lg:block">
-                <div className="w-full h-[1px] bg-gray-300"></div>
-                <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
+          ]
+            .reverse()
+            .map((proj, idx) => (
+              <div
+                className="flex justify-center flex-col items-center pt-20 sm:pt-32 relative"
+                key={idx}
+              >
+                <span className="text-sm text-gray-600 pb-1 block lg:hidden">
                   {proj.date}
                 </span>
-              </div>
+                <img
+                  src={proj.src}
+                  alt={proj.alt}
+                  className="w-full max-w-2xl h-auto "
+                />
 
-              <a href={proj.link} target="_blank">
-                <h3 className="font-semibold text-xl sm:text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
-                  {proj.title}
-                </h3>
-              </a>
-              <p className="pt-1 text-gray-700">
-                <em>{proj.stack}</em>
-              </p>
-              <p className="w-full max-w-2xl pt-3 text-gray-700 px-4 sm:px-0">
-                {proj.desc}
-              </p>
-            </div>
-          ))}
+                <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[70px] hidden lg:block">
+                  <div className="w-full h-[1px] bg-gray-300 timeline"></div>
+                  <span className="absolute top-[-1.5rem] left-0 text-sm text-gray-600 w-full text-left">
+                    {proj.date}
+                  </span>
+                </div>
+
+                <a href={proj.link} target="_blank">
+                  <h3 className="font-semibold text-xl sm:text-2xl underline pt-3 text-gray-800 hover:text-gray-500">
+                    {proj.title}
+                  </h3>
+                </a>
+                <p className="pt-1 text-gray-700">
+                  <em>{proj.stack}</em>
+                </p>
+                <p className="w-full max-w-2xl pt-3 text-gray-700 px-4 sm:px-0">
+                  {proj.desc}
+                </p>
+              </div>
+            ))}
         </div>
       </section>
     </div>

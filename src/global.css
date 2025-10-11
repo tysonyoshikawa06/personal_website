@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  --background-color: #f2f0ef;
+}
+
 @font-face {
   font-family: "satoshi";
   src: url("/Satoshi-Variable.ttf") format("truetype");
@@ -11,4 +15,8 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+*:not(.timeline) {
+  background-color: var(--background-color);
 }
