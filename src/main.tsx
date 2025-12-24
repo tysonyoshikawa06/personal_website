@@ -104,15 +104,15 @@ createRoot(document.getElementById("root")!).render(
               desc: `Built as a class project at Cornell, OffCampusGroups is an app designed to help students find groups to go with to large off-campus events (concerts, networking events, etc.).`,
             },
             {
-              src: "asphalt.png",
-              alt: "Asphalt Case Study",
+              src: "pathos.png",
+              alt: "PathOS.earth",
               date: "Feb 2025",
-              title: "Asphalt Case Study",
-              link: "https://github.com/tysonyoshikawa06/asphalt-nme-sp25-tyson",
-              stack: "React, Next.js, TypeScript, Node.js, Tailwind CSS",
+              title: "PathOS.earth",
+              link: "https://www.pathos.earth/",
+              stack: "React, Next.js, TypeScript, Node.js, Flask, Python, AWS",
               desc: (
                 <>
-                  Asphalt is a tool developed by Cornell's{" "}
+                  PathOS is a tool developed by Cornell's{" "}
                   <u className="hover:text-gray-500">
                     <a
                       href="https://www.joingreenclub.com/"
@@ -122,11 +122,10 @@ createRoot(document.getElementById("root")!).render(
                       GreenClub
                     </a>
                   </u>{" "}
-                  to help optimize routes for food waste transport to minimize
-                  emissions. As a part of my onboarding process for GreenClub, I
-                  was tasked with helping to design and implement 4 new pages
-                  for their website to provide stakeholders with a more
-                  intuitive user experience.
+                  to help minimize emissions on waste transport routes. PathOS
+                  uses a heuristic load dependent vehicle routing problem
+                  algorithm deployed on AWS to allow stakeholders to optimize
+                  their routes based on distance and stop loads.
                 </>
               ),
             },

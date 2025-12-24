@@ -1,5 +1,5 @@
 const Nav = () => {
-  const date = "August 28, 2025";
+  const date = "December 23, 2025";
   return (
     <div
       className="
