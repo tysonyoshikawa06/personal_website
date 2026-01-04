@@ -99,8 +99,7 @@ createRoot(document.getElementById("root")!).render(
               date: "Sep 2024",
               title: "OffCampusGroups",
               link: "https://off-campus-groups.vercel.app/",
-              stack:
-                "React, TypeScript, Node.js, Tailwind CSS, Firebase, OAuth",
+              stack: "React, TypeScript, Node.js, TailwindCSS, Firebase, OAuth",
               desc: `Built as a class project at Cornell, OffCampusGroups is an app designed to help students find groups to go with to large off-campus events (concerts, networking events, etc.).`,
             },
             {
@@ -138,9 +137,9 @@ createRoot(document.getElementById("root")!).render(
                   <div>Valence</div>
                 </>
               ),
-              link: "https://github.com/tysonyoshikawa06/valence",
+              link: "https://github.com/tysonyoshikawa06/valence2",
               stack:
-                "React, Next.js, TypeScript, Node.js, Tailwind CSS, Cytoscape.js, Express, Supabase, OAuth, OpenAI API",
+                "React, Next.js, TypeScript, TailwindCSS, Cytoscape.js, FastAPI, PostgreSQL, SQL, OpenAI API",
               desc: (
                 <>
                   I'm currently building{" "}
@@ -153,7 +152,7 @@ createRoot(document.getElementById("root")!).render(
                     </a>
                   </u>
                   , a web application that leverages AI to help the 52% of
-                  struggling high school students to better understand
+                  struggling high school students better understand
                   intra-subject relations in science. Users are encouraged to
                   talk to an AI tutor to unlock new topics and progress through
                   the interactive graph by asking deep questions and
