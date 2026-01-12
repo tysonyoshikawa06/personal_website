@@ -90,8 +90,8 @@ createRoot(document.getElementById("root")!).render(
               date: "July 2024",
               title: "platstem.org",
               link: "https://platstem.org/",
-              stack: "HTML, CSS, Bootstrap, JavaScript",
-              desc: `Platstem.org was my first attempt at building an deploying software onto the internet. Made with simple technologies, platstem.org is a website with over one hundred different science resources for high school students to explore, giving students a way to explore complex scientific topics not traditionally taught at the high school level.`,
+              stack: "HTML, Bootstrap CSS, JavaScript",
+              desc: `Platstem.org was my first attempt at building an deploying software onto the internet. Built with simple technologies, platstem.org is a frontend website with over one hundred different science resources for high school students to explore, giving 20,000+ students a way to explore complex scientific topics not traditionally taught at the high school level.`,
             },
             {
               src: "ocgroups.png",
