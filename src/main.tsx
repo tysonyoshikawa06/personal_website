@@ -38,7 +38,7 @@ createRoot(document.getElementById("root")!).render(
               <br />
               <span className="underline hover:text-gray-500">
                 <a
-                  href="https://docs.google.com/document/d/1Y637g9_FWVhkjgH9nHLHI0MiHJEbPNkm/edit"
+                  href="https://docs.google.com/document/d/18cpUPuy4OfZS9X9pm_cV3ZB-Uy8l7QCs"
                   target="_blank"
                 >
                   Resume
