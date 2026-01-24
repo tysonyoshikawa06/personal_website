@@ -139,7 +139,7 @@ createRoot(document.getElementById("root")!).render(
               ),
               link: "https://github.com/tysonyoshikawa06/valence2",
               stack:
-                "React, Next.js, TypeScript, TailwindCSS, Cytoscape.js, FastAPI, PostgreSQL, SQL, OpenAI API",
+                "React, Next.js, TypeScript, TailwindCSS, Cytoscape.js, FastAPI, PostgreSQL, SQL, OpenAI API, Docker",
               desc: (
                 <>
                   I'm currently building{" "}
@@ -199,5 +199,5 @@ createRoot(document.getElementById("root")!).render(
         </div>
       </section>
     </div>
-  </StrictMode>
+  </StrictMode>,
 );
