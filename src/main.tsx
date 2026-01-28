@@ -139,7 +139,7 @@ createRoot(document.getElementById("root")!).render(
               ),
               link: "https://github.com/tysonyoshikawa06/valence2",
               stack:
-                "React, Next.js, TypeScript, TailwindCSS, Cytoscape.js, FastAPI, PostgreSQL, SQL, OpenAI API, Docker",
+                "React, Next.js, TypeScript, TailwindCSS, Cytoscape.js, FastAPI, PostgreSQL, SQL, OpenAI API, Docker, AWS ECS",
               desc: (
                 <>
                   I'm currently building{" "}
