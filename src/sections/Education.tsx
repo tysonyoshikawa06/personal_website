@@ -1,4 +1,5 @@
-import { useState, useCallback, useRef, useEffect, ReactNode } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
+import type { ReactNode } from "react";
 import { useReveal } from "../hooks";
 import { C, EDUCATION_OVERVIEW, COURSEWORK, ACTIVITIES } from "../constants";
 import { SectionHeader } from "../components/ui";
