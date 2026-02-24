@@ -1,8 +1,9 @@
 import { useReveal } from "../hooks";
 import { C, SOCIAL_LINKS } from "../constants";
 import { LinkedInIcon, GitHubIcon } from "../components/ui";
+import React from "react";
 
-const ICON_MAP: Record<string, () => JSX.Element> = {
+const ICON_MAP: Record<string, React.FC> = {
   LinkedIn: LinkedInIcon,
   GitHub: GitHubIcon,
 };
