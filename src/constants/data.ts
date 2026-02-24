@@ -163,7 +163,7 @@ export const COURSEWORK = [
   "CS 2800 — Discrete Structures",
   "CS 3110 — Data Structures & Functional Programming",
   "CS 3410 — Computer System Organization",
-  "CS 4780 — Introduction to Machine Learning",
+  "CS 3780 — Introduction to Machine Learning",
 ];
 
 export const ACTIVITIES = [
