@@ -92,7 +92,7 @@ export function Footer() {
           opacity: 0.5,
         }}
       >
-        © 2025 Tyson Yoshikawa
+        © 2026 Tyson Yoshikawa
       </div>
     </footer>
   );

@@ -85,7 +85,7 @@ export const EXPERIENCES = [
     role: "Problem Design Engineer",
     company: "Idler (YC '25)",
     date: "Jan. 2026 — Present",
-    desc: "At my part-time role at Idler, I review AI-generated code diffs across real production repositories, assessing spec clarity and test case validity. My job is to classify code implementation failures as AI-incompetence-based or spec-clarity-based in order to improve RL environments for AI coding agents.",
+    desc: "At my part-time role at Idler, I review AI-generated code diffs across real production repositories, assessing spec clarity and test case validity. My job is to classify code implementation failures as AI-incompetence-based or spec-clarity-based in order to improve RL environments for AI programming agents.",
     tags: [
       "RL Environments",
       "Artificial Intelligence",
@@ -93,13 +93,14 @@ export const EXPERIENCES = [
       "Python",
       "NumPy",
       "Java",
+      "SQL",
     ],
   },
   {
     role: "Selected Program Participant",
     company: "Milstein Summer Program Residency at Cornell Tech",
     date: "June 2025 — Aug. 2025",
-    desc: "During this selective summer program, I learned from professionals working in software development, hardware manufacturing, and public service, gaining an interdisciplinary underestanding of AI's effect on the world. During this time, along with the guidance of entrepreneur coaches from Cornell Tech and startup foundres from the broader NYC metropolitan area, I built the foundations of Valence (detailed below) and worked with other participants on AI-integrated IoT projects.",
+    desc: "During this selective summer program, I learned from professionals working in software development, hardware manufacturing, and public service, gaining an interdisciplinary underestanding of AI's effect on the world. During this time, along with the guidance of entrepreneur coaches from Cornell Tech and startup founders from the broader NYC metropolitan area, I built the foundations of Valence (detailed below) and worked with other participants on AI-integrated IoT projects.",
     tags: [
       "Artificial Intelligence",
       "Arduino",
@@ -115,6 +116,7 @@ export const EXPERIENCES = [
     date: "Jan. 2025 — Present",
     desc: "I currently lead a team of 4 developers, managing sprints, standups, and tickets to develop PathOS.earth, a route-optimization tool to minimize emissions on waste transport routes for real stakeholders. During my time as Software Development Lead, I have implemented a Scrum workflow to make development more efficient and ensure quality pull requests throughout. In past semesters, I have worked on the load-dependent VRP algorithm and frontend of the website.",
     tags: [
+      "Agile / Scrum",
       "React",
       "TypeScript",
       "Next.js",
@@ -145,7 +147,7 @@ export const EXPERIENCES = [
     company: "University of Hawaii IDEA Lab",
     date: "July 2023 — Apr. 2024",
     desc: "In high school, I worked with a computer science professor and a PhD candidate exploring the effectiveness of using generative AI in higher education. My job was to analyze quiz scores from undergraduate students and conduct background research that informed the final paper presented at the International Conference on Human-Computer Interaction.",
-    tags: ["Data Analysis", "Artificial Intelligence", "Python"],
+    tags: ["Data Analysis", "AI Research", "Python"],
   },
 ];
 
@@ -161,7 +163,7 @@ export const COURSEWORK = [
   "CS 2110 — Object-Oriented Programming & Data Structures",
   "MATH 2210 — Linear Algebra",
   "CS 2800 — Discrete Structures",
-  "CS 3110 — Data Structures & Functional Programming",
+  "CS 3110 — Data Structures & Functional Programming with OCaml",
   "CS 3410 — Computer System Organization",
   "CS 3780 — Introduction to Machine Learning",
 ];
@@ -204,8 +206,8 @@ export const PROJECTS = [
     date: "Feb 2025",
     title: "PathOS.earth",
     link: "https://www.pathos.earth/",
-    stack: ["React", "Next.js", "TypeScript", "Flask", "Python", "AWS"],
-    desc: "A route-optimization tool by Cornell's GreenClub to minimize emissions on waste transport routes. Uses a heuristic load-dependent VRP algorithm deployed on AWS.",
+    stack: ["React", "Next.js", "TypeScript", "Flask", "Python", "AWS EC2"],
+    desc: "A route-optimization tool by Cornell's GreenClub to minimize emissions on waste transport routes. Uses a heuristic load-dependent VRP algorithm and cloud-hosted OSRM server deployed on AWS.",
     featured: true,
   },
   {
